@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Post } from "../components/post";
+import { PostForm } from "../components/postForm";
 import styles from "../styles/Home.module.scss";
 
 export default function Home() {
@@ -40,11 +41,8 @@ export default function Home() {
             />
           </li>
         </ul>
-        <form>
-          <textarea className={styles.formContent}></textarea>
-          <button className={styles.buttonContent}>Add New Tweet</button>
-        </form>
       </main>
+      <PostForm />
     </div>
   );
 }
